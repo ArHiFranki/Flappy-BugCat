@@ -18,13 +18,12 @@ public class PlayerMover : MonoBehaviour
 
     private void Start()
     {
-        transform.position = _startPosition;
-
         _rigidbody = GetComponent<Rigidbody2D>();
-        _rigidbody.velocity = Vector2.zero;
 
         _maxRotation = Quaternion.Euler(0, 0, _maxRotationZ);
         _minRotation = Quaternion.Euler(0, 0, _minRotationZ);
+
+        ResetPlayer();
     }
 
     private void Update()
@@ -37,5 +36,12 @@ public class PlayerMover : MonoBehaviour
         }
 
         transform.rotation = Quaternion.Lerp(transform.rotation, _minRotation, _rotationSpeed * Time.deltaTime);
+    }
+
+    public void ResetPlayer()
+    {
+        transform.position = _startPosition;
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        _rigidbody.velocity = Vector2.zero;
     }
 }
