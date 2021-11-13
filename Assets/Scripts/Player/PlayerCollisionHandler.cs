@@ -14,6 +14,13 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _player.Die();
+        if(collision.TryGetComponent(out ScpreZone scoreZone))
+        {
+            _player.AddScore();
+        }
+        else
+        {
+            _player.Die();
+        }
     }
 }

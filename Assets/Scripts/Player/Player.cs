@@ -14,6 +14,12 @@ public class Player : MonoBehaviour
         _mover = GetComponent<PlayerMover>();
     }
 
+    public void AddScore()
+    {
+        _score++;
+        Debug.Log("Score:" + _score);
+    }
+
     public void ResetGame()
     {
         _score = 0;
