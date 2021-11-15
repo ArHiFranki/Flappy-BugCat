@@ -23,7 +23,7 @@ public class PlayerMover : MonoBehaviour
         _maxRotation = Quaternion.Euler(0, 0, _maxRotationZ);
         _minRotation = Quaternion.Euler(0, 0, _minRotationZ);
 
-        ResetPlayer();
+        ResetPlayerCondition();
     }
 
     private void Update()
@@ -38,7 +38,7 @@ public class PlayerMover : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, _minRotation, _rotationSpeed * Time.deltaTime);
     }
 
-    public void ResetPlayer()
+    public void ResetPlayerCondition()
     {
         transform.position = _startPosition;
         transform.rotation = Quaternion.Euler(0, 0, 0);

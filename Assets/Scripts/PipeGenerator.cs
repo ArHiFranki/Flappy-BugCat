@@ -9,11 +9,12 @@ public class PipeGenerator : ObjectPool
     [SerializeField] private float _maxSpawnPositionY;
     [SerializeField] private float _minSpawnPositionY;
 
-    private float _elapsedTime = 0;
+    private float _elapsedTime;
 
     private void Start()
     {
         Initialize(_template);
+        _elapsedTime = 0;
     }
 
     private void Update()
