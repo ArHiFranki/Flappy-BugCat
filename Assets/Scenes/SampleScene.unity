@@ -1336,4 +1336,4 @@ MonoBehaviour:
   _template: {fileID: 3627137493108816549, guid: 2ad0af3536be2ef40acc26ec38934be0, type: 3}
   _secondsBetweenSpawn: 2
   _maxSpawnPositionY: 2.5
-  _minSpawnPositionY: -2.5
+  _minSpawnPositionY: -1.5

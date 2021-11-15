@@ -17,7 +17,7 @@ public class PipeGenerator : ObjectPool
         _elapsedTime = 0;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;
 
