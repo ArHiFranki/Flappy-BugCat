@@ -1215,7 +1215,7 @@ MonoBehaviour:
   _gameController: {fileID: 808400993}
   _startPosition: {x: 0, y: 0, z: 0}
   _speed: 3
-  _tapForce: 250
+  _tapForce: 220
   _rotationSpeed: 1
   _maxRotationZ: 60
   _minRotationZ: -60
@@ -1265,8 +1265,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.061887383, y: -0.06553055}
-  m_Size: {x: 1.7467477, y: 1.1715496}
+  m_Offset: {x: 0.11069829, y: -0.06109329}
+  m_Size: {x: 1.6491288, y: 1.1626765}
   m_Direction: 1
 --- !u!114 &1018471304
 MonoBehaviour:
