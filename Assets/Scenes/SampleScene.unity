@@ -944,6 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ad3e67a795cf34a93f1f51de38eb5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameController: {fileID: 808400993}
   _startPosition: {x: 0, y: 0, z: 0}
   _speed: 3
   _tapForce: 250

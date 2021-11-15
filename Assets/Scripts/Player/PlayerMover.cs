@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMover : MonoBehaviour
 {
+    [SerializeField] private GameController _gameController;
     [SerializeField] private Vector3 _startPosition;
     [SerializeField] private float _speed;
     [SerializeField] private float _tapForce;
@@ -28,7 +29,7 @@ public class PlayerMover : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && !_gameController.IsGameOver)
         {
             _rigidbody.velocity = new Vector2(_speed, 0);
             transform.rotation = _maxRotation;
